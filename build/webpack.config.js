@@ -1,7 +1,7 @@
 const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.config')
-const devWebpackConfig = require('./webpack.base.config')
-const proWebpackConfig = require('./webpack.base.config')
+const devWebpackConfig = require('./webpack.dev.config')
+const proWebpackConfig = require('./webpack.pro.config')
 
 module.exports = (env, argv) => {
   const config =

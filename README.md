@@ -5,8 +5,8 @@
 - webpack
 - webpack-cli
 - webpack-merge
-- webpack-dev-server: 启动开发环境
-- html-webpack-plugin: 输入到页面，在 base config 中配置
+- webpack-dev-server: 启动开发环境，在 webpack.dev.config.js 中配置
+- html-webpack-plugin: 输入到页面，在 webpack.base.config.js 中配置
 - clean-webpack-plugin: 用于在下一次打包时清除之前打包的文件，3.0.0 注意导入方式和传参
 
 ### TypeScript 相关
