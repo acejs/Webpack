@@ -1,0 +1,9 @@
+{
+  "name": "Webpack",
+  "version": "1.0.0",
+  "description": "How to use Webpack to construct a project",
+  "main": "index.js",
+  "repository": "https://github.com/BlueBlueBlueSky/Webpack.git",
+  "author": "<xukang@tuya.com>",
+  "license": "MIT"
+}
