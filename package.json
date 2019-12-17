@@ -5,5 +5,11 @@
   "main": "index.js",
   "repository": "https://github.com/BlueBlueBlueSky/Webpack.git",
   "author": "<xukang@tuya.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
 }
