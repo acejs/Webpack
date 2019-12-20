@@ -13,3 +13,9 @@
 
 - typescript
 - ts-loader: 用于加载 ts 文件
+
+### 测试
+
+- jest
+- @types/jest
+- ts-jest: jest.config.js 中配置 transform

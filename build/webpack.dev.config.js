@@ -7,12 +7,14 @@ module.exports = {
   devServer: {
     host: 'localhost',
     port: 3003,
+    clientLogLevel: 'warning',
     open: true,
     hot: true,
     quiet: true,
     overlay: {
       warnings: true,
       errors: true
-    }
+    },
+    progress: true
   }
 }
