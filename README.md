@@ -13,9 +13,32 @@
 
 - typescript
 - ts-loader: 用于加载 ts 文件
+  - transpileOnly `true`失去类型检查  `false` 降低编译速度
+- fork-ts-checker-webpack-plugin: 在 `transpileOnly: true` 时配置，开启一个独立的进程进行类型检查 [Webpack文档](https://webpack.docschina.org/guides/build-performance/)
+
+
+
+### Babel
+
+
 
 ### 测试
 
-- jest
-- @types/jest
-- ts-jest: jest.config.js 中配置 transform
+`npx ts-jest config:init`: 生成 jest 配置文件
+
+- `jest`
+- `@types/jest`
+- `ts-jest`: 测试用例中可以进行类型检查
+
+`jest.config.js`中新增`preset: 'ts-jest', testEnvironment: 'node'`
+
+
+
+### eslint
+
+- eslint
+- @typescript-eslint/eslint-plugin
+- @typescript-eslint/parser
+
+`"lint": "eslint src --ext .js,.ts"`
+
