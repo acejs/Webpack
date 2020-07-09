@@ -6,10 +6,10 @@ module.exports = {
   output: {
     // 默认./dist
     path: path.resolve(__dirname, '../dist'),
-    filename: 'app.js',
+    filename: 'index.js'
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx'],
+    extensions: ['.js', '.ts', '.tsx']
   },
   // 处理那些非 JavaScript 文件
   module: {
@@ -20,13 +20,13 @@ module.exports = {
           {
             loader: 'ts-loader',
             options: {
-              transpileOnly: true, // 编译时不进行类型检查
-            },
-          },
+              transpileOnly: true // 编译时不进行类型检查
+            }
+          }
         ],
-        exclude: /node_modules/,
-      },
-    ],
+        exclude: /node_modules/
+      }
+    ]
   },
-  plugins: [new ForkTsCheckerWebpackPlugin()],
+  plugins: [new ForkTsCheckerWebpackPlugin()]
 }

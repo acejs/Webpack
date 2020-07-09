@@ -2,5 +2,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin') // 用于在下�
 
 module.exports = {
   mode: 'production',
+  devtool: 'none',
+  output: {
+    libraryTarget: 'umd'
+  },
   plugins: [new CleanWebpackPlugin()]
 }
