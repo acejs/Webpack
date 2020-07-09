@@ -1,4 +1,4 @@
-## 构建 Webpack + TypeScript 基础开发框架
+## 构建 Webpack + TypeScript JS 库开发框架
 
 ### Webpack 相关
 
@@ -13,14 +13,10 @@
 
 - typescript
 - ts-loader: 用于加载 ts 文件
-  - transpileOnly `true`失去类型检查  `false` 降低编译速度
-- fork-ts-checker-webpack-plugin: 在 `transpileOnly: true` 时配置，开启一个独立的进程进行类型检查 [Webpack文档](https://webpack.docschina.org/guides/build-performance/)
-
-
+  - transpileOnly `true`失去类型检查 `false` 降低编译速度
+- fork-ts-checker-webpack-plugin: 在 `transpileOnly: true` 时配置，开启一个独立的进程进行类型检查 [Webpack 文档](https://webpack.docschina.org/guides/build-performance/)
 
 ### Babel
-
-
 
 ### 测试
 
@@ -32,8 +28,6 @@
 
 `jest.config.js`中新增`preset: 'ts-jest', testEnvironment: 'node'`
 
-
-
 ### eslint
 
 - eslint
@@ -41,4 +35,3 @@
 - @typescript-eslint/parser
 
 `"lint": "eslint src --ext .js,.ts"`
-
